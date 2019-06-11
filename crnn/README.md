@@ -1,28 +1,25 @@
 Convolutional Recurrent Neural Network
 ======================================
 
-This software implements OCR system using CNN + RNN + CTCLoss, inspired by CRNN network.
+Dependence
+----------
+* pytorch 0.3.0 +
+* [warp-ctc](https://github.com/SeanNaren/warp-ctc)
 
-Usage
+Quick Usage
+-----
+1. install warp-ctc
+2. Download prepared dataset from [Google Drive](https://drive.google.com/file/d/1FLLb22K3uLrfR-lAy3TRoSkvLNXHl_g2/view?usp=sharing)
+3. Unzip it on crnn root directory.
+4. Run `bash run_train.sh`  or  `python train.py --test-init True --test-epoch 5 --output-dir ./COCO_data_models --data-path cropped_COCO` 
+
+Detailed Usage
 -----
 
+`python ./train.py --help`
 `
-python ./train.py --help
-`
 
-Demo
-----
 
-1. Train simple OCR using TestDataset data generator.
-Training for ~60-100 epochs.
-```
-python train.py --test-init True --test-epoch 10 --output-dir <path_to_folder_with_snapshots>
-```
-
-2. Run test for trained model with visualization mode.
-```
-python test.py --snapshot <path_to_folder_with_snapshots>/crnn_resnet18_10_best --visualize True
-```
 
 Train on custom dataset
 -----------------------
@@ -77,15 +74,3 @@ python train.py --test-init True --test-epoch 10 --output-dir <path_to_folder_wi
 ```
 python test.py --snapshot <path_to_folder_with_snapshots>/crnn_resnet18_10_best --visualize True --data-path <path_to_custom_dataset>
 ```
-
-
-Dependence
-----------
-* pytorch 0.3.0 +
-* [warp-ctc](https://github.com/SeanNaren/warp-ctc)
-
-Articles
---------
-
-* [An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition](https://arxiv.org/abs/1507.05717)
-* [Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks](https://dl.acm.org/citation.cfm?id=1143891)

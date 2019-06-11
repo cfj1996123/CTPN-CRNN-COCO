@@ -15,9 +15,10 @@ chmod +x make.sh
 # Quick Start
 1. Install the dependencies
 2. Download pretrained VGG model from [Google Drive](https://drive.google.com/file/d/15Plf9lWSlF7z0ZayOdEZJgKj9Sc3ndfs/view?usp=sharing), and put it into ./data/pretrain
-3. Download the COCO data we prepared from [Google Drive](https://drive.google.com/file/d/1Bv20FApfheQGVI8g-21H3J4v5GvrmNTP/view?usp=sharing)
-4. Simply run `python ./ctpn/train_net.py` in the same directory as this markdown file.
-- you can modify some hyper parameters in ctpn/text.yml, or just used the parameters I set.
+3. Download the COCO data we prepared from [Google Drive](https://drive.google.com/file/d/1Bv20FApfheQGVI8g-21H3J4v5GvrmNTP/view?usp=sharing), unzip and put it into ./data.
+4. Open terminal and go to ./data directory, run `ln -s TEXTVOC VOCdevkit2007`
+5. Simply run `python ./ctpn/train_net.py` in the same directory as that of the markdown file.
+- you can modify some hyper parameters in ctpn/text.yml, or just use the parameters I set.
 
 # parameters
 there are some parameters you may need to modify according to your requirement, you can find them in ctpn/text.yml

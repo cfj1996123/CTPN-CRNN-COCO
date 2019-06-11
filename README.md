@@ -9,4 +9,6 @@ and
 
 For instructions on running CTPN and CRNN, see markdown files inside ./ctpn and ./crnn folders.
 
-Models are trained on COCO-text Dataset. ./coco-text-master/Get_Train_For_CRNN_CTPN.ipynb provides code to extract data to use. The data we use has been posted on Google Drive, see markdown files inside ./ctpn and ./crnn folders for details.
+Models are trained on COCO-text Dataset. 
+
+./coco-text-master/Get_Train_For_CRNN_CTPN.ipynb provides code to extract data to use. The data we use has been posted on Google Drive, see markdown files inside ./ctpn and ./crnn folders for details.
